@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOKIRA CYBER — Digital Research & Authorized Security Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Background Canvas Layer -->
+    <canvas id="cyber-canvas"></canvas>
+    <div class="scanline"></div>
+    <div class="cyber-grid"></div>
+    <div class="mouse-glow" id="mouse-glow"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">[ A ]</span>
+                <div class="logo-text">
+                    <span class="brand-name">AOKIRA</span>
+                    <span class="brand-sub">CYBER SERVICES</span>
+                </div>
+            </a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">HOME</a></li>
+                <li><a href="#services" class="nav-link">SERVICES</a></li>
+                <li><a href="#stats" class="nav-link">RESEARCH</a></li>
+                <li><a href="#about" class="nav-link">SECURITY</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+
+            <div class="nav-status">
+                <span class="pulse-dot"></span>
+                <span class="status-text">SYS_ONLINE</span>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="badge-group">
+                    <span class="cyber-badge"><i class="dot"></i> SYSTEM ONLINE</span>
+                    <span class="cyber-badge"><i class="dot blue"></i> SECURE CONNECTION</span>
+                    <span class="cyber-badge">2026 CYBER SERVICES</span>
+                </div>
+
+                <div class="hero-terminal-prompt">
+                    <span id="hero-typing-log"></span><span class="cursor">_</span>
+                </div>
+
+                <h1 class="glitch-title" data-text="AOKIRA CYBER">AOKIRA CYBER</h1>
+                <p class="hero-subtitle">« Digital Research & Authorized Security Services »</p>
+
+                <div class="hero-cta">
+                    <a href="#services" class="btn btn-primary"><span class="btn-text">EXPLORE SERVICES</span><span class="btn-glitch"></span></a>
+                    <a href="#contact" class="btn btn-secondary"><span class="btn-text">CONTACT AOKIRA</span></a>
+                </div>
+            </div>
+
+            <!-- Terminal Window Component -->
+            <div class="terminal-card">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="terminal-title">AOKIRA_TERMINAL.exe</div>
+                    <div class="terminal-actions">v2.6.0</div>
+                </div>
+                <div class="terminal-body" id="terminal-body">
+                    <div class="terminal-line"><span class="t-green">aokira@sec-ops:~$</span> <span class="t-white">init_system_core --verbose</span></div>
+                    <div id="terminal-output"></div>
+                    <div class="terminal-line"><span class="t-green">aokira@sec-ops:~$</span> <span class="typing-active"></span><span class="cursor-block">█</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cyber Statistics Section -->
+        <section id="stats" class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="7">00</div>
+                        <div class="stat-label">ACTIVE SERVICES</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-status">ONLINE</div>
+                        <div class="stat-label">SYSTEM STATUS</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-status alt">ACTIVE</div>
+                        <div class="stat-label">RESEARCH MODULES</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-status alt2">AUTHORIZED</div>
+                        <div class="stat-label">SECURITY MODE</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Catalog Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header center">
+                    <h2 class="section-title">OUR SERVICES</h2>
+                    <p class="section-subtitle">« Professional digital research and authorized security services. »</p>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="filter-container">
+                    <button class="filter-btn active" data-category="all">ALL</button>
+                    <button class="filter-btn" data-category="RESEARCH">RESEARCH</button>
+                    <button class="filter-btn" data-category="SECURITY">SECURITY</button>
+                    <button class="filter-btn" data-category="DEVICE">DEVICE</button>
+                    <button class="filter-btn" data-category="DEBUGGING">DEBUGGING</button>
+                    <button class="filter-btn" data-category="MEDIA">MEDIA</button>
+                </div>
+
+                <!-- Services Grid -->
+                <div class="services-grid" id="services-grid">
+                    
+                    <!-- Service 01 -->
+                    <div class="service-card" data-category="RESEARCH" data-code="IG-RESEARCH">
+                        <div class="card-scan-line"></div>
+                        <div class="card-corners"><span></span><span></span><span></span><span></span></div>
+                        <div class="card-header">
+                            <span class="service-badge">PUBLIC DATA</span>
+                            <span class="service-number">01</span>
+                        </div>
+                        <h3 class="service-title">🔎 RESEARCH IG</h3>
+                        <div class="price-container">
+                            <span class="price-scanner"></span>
+                            <span class="price-text">Rp25.000</span>
+                        </div>
+                        <p class="service-desc">«Layanan riset informasi publik dari akun Instagram berdasarkan data yang tersedia secara terbuka.»</p>
+                        <ul class="feature-list">
+                            <li>Public profile research</li>
+                            <li>Username research</li>
+                            <li>Public information analysis</li>
+                            <li>Digital footprint overview</li>
+                        </ul>
+                        <button class="btn-card-request" onclick="openOrderModal('IG-RESEARCH', 'Research IG')">REQUEST SERVICE</button>
+                    </div>
+
+                    <!-- Service 02 -->
+                    <div class="service-card" data-category="RESEARCH" data-code="FAMILY-RESEARCH">
+                        <div class="card-scan-line"></div>
+                        <div class="card-corners"><span></span><span></span><span></span><span></span></div>
+                        <div class="card-header">
+                            <span class="service-badge">OSINT RESEARCH</span>
+                            <span class="service-number">02</span>
+                        </div>
+                        <h3 class="service-title">🧬 RESEARCH DIGITAL FAMILY TARGET</h3>
+                        <div class="price-container">
+                            <span class="price-scanner"></span>
+                            <span class="price-text">Rp600.000</span>
+                        </div>
+                        <p class="service-desc">«Layanan riset digital keluarga/target berdasarkan informasi yang tersedia secara legal dan terbuka, dengan fokus pada analisis data publik.»</p>
+                        <ul class="feature-list">
+                            <li>Public digital footprint</li>
+                            <li>Open-source research</li>
+                            <li>Public social media analysis</li>
+                            <li>Information mapping</li>
+                            <li>Research report</li>
+                        </ul>
+                        <button class="btn-card-request" onclick="openOrderModal('FAMILY-RESEARCH', 'Research Digital Family Target')">REQUEST SERVICE</button>
+                    </div>
+
+                    <!-- Service 03 -->
+                    <div class="service-card" data-category="SECURITY" data-code="CCTV-MONITOR">
+                        <div class="card-scan-line"></div>
+                        <div class="card-corners"><span></span><span></span><span></span><span></span></div>
+                        <div class="card-header">
+                            <span class="service-badge warning">AUTHORIZED ONLY</span>
+                            <span class="service-number">03</span>
+                        </div>
+                        <h3 class="service-title">📹 CCTV SECURITY MONITORING</h3>
+                        <div class="price-container">
+                            <span class="price-scanner"></span>
+                            <span class="price-text">Rp5.000.000</span>
+                        </div>
+                        <p class="service-desc">«Layanan monitoring dan security assessment CCTV yang dilakukan hanya pada sistem yang dimiliki atau telah mendapatkan izin dari pemilik.»</p>
+                        <ul class="feature-list">
+                            <li>Authorized CCTV assessment</li>
+                            <li>Security configuration review</li>
+                            <li>Monitoring setup</li>
+                            <li>Vulnerability assessment</li>
+                            <li>Security recommendations</li>
+                        </ul>
+                        <button class="btn-card-request" onclick="openOrderModal('CCTV-MONITOR', 'Authorized CCTV Security Monitoring')">REQUEST SERVICE</button>
+                    </div>
+
+                    <!-- Service 04 -->
+                    <div class="service-card" data-category="SECURITY" data-code="CAMERA-SCREEN">
+                        <div class="card-scan-line"></div>
+                        <div class="card-corners"><span></span><span></span><span></span><span></span></div>
+                        <div class="card-header">
+                            <span class="service-badge warning">AUTHORIZED ACCESS</span>
+                            <span class="service-number">04</span>
+                        </div>
+                        <h3 class="service-title">🖥️ CAMERA & SCREEN SECURITY MONITORING</h3>
+                        <div class="price-container">
+                            <span class="price-scanner"></span>
+                            <span class="price-text">Rp11.000.000</span>
+                        </div>
+                        <p class="service-desc">«Layanan integrasi dan monitoring kamera/screen untuk sistem yang dimiliki atau telah mendapatkan izin resmi dari pemilik.»</p>
+                        <ul class="feature-list">
+                            <li>Authorized device monitoring</li>
+                            <li>Camera integration</li>
+                            <li>Screen monitoring</li>
+                            <li>Security assessment</li>
+                            <li>Monitoring dashboard</li>
+                            <li>Security recommendations</li>
+                        </ul>
+                        <button class="btn-card-request" onclick="openOrderModal('CAMERA-SCREEN', 'Authorized Camera & Screen Monitoring')">REQUEST SERVICE</button>
+                    </div>
+
+                    <!-- Service 05 -->
+                    <div class="service-card" data-category="DEVICE" data-code="DEVICE-REPAIR">
+                        <div class="card-scan-line"></div>
+                        <div class="card-corners"><span></span><span></span><span></span><span></span></div>
+                        <div class="card-header">
+                            <span class="service-badge">DEVICE SUPPORT</span>
+                            <span class="service-number">05</span>
+                        </div>
+                        <h3 class="service-title">📱 HP RUSAK / DEVICE REPAIR</h3>
+                        <div class="price-container">
+                            <span class="price-scanner"></span>
+                            <span class="price-text">Rp300.000</span>
+                        </div>
+                        <p class="service-desc">«Layanan troubleshooting perangkat HP yang memetakan masalah software atau konfigurasi.»</p>
+                        <ul class="feature-list">
+                            <li>Device troubleshooting</li>
+                            <li>Software diagnostics</li>
+                            <li>System configuration check</li>
+                            <li>Performance troubleshooting</li>
+                            <li>Basic recovery assistance</li>
+                        </ul>
+                        <button class="btn-card-request" onclick="openOrderModal('DEVICE-REPAIR', 'HP Rusak / Device Repair')">REQUEST SERVICE</button>
+                    </div>
+
+                    <!-- Service 06 -->
+                    <div class="service-card" data-category="DEBUGGING" data-code="BUG-CRASH-FIX">
+                        <div class="card-scan-line"></div>
+                        <div class="card-corners"><span></span><span></span><span></span><span></span></div>
+                        <div class="card-header">
+                            <span class="service-badge">DEBUG MODE</span>
+                            <span class="service-number">06</span>
+                        </div>
+                        <h3 class="service-title">🐞 BUG CRASH FIX</h3>
+                        <div class="price-container">
+                            <span class="price-scanner"></span>
+                            <span class="price-text">Rp30.000</span>
+                        </div>
+                        <p class="service-desc">«Layanan pelaksanaan eksekusi dan penanganan bug pada HP/aplikasi.»</p>
+                        <div class="mini-terminal">
+                            &gt; scanning application...<br>
+                            &gt; locating error...<br>
+                            &gt; STATUS: RESOLVED
+                        </div>
+                        <ul class="feature-list">
+                            <li>Bug identification</li>
+                            <li>Error analysis</li>
+                            <li>Crash troubleshooting</li>
+                            <li>Code debugging</li>
+                            <li>Basic performance optimization</li>
+                        </ul>
+                        <button class="btn-card-request" onclick="openOrderModal('BUG-CRASH-FIX', 'Bug Crash Fix')">REQUEST SERVICE</button>
+                    </div>
+
+                    <!-- Service 07 -->
+                    <div class="service-card" data-category="MEDIA" data-code="PUBLIC-MEDIA">
+                        <div class="card-scan-line"></div>
+                        <div class="card-corners"><span></span><span></span><span></span><span></span></div>
+                        <div class="card-header">
+                            <span class="service-badge">MEDIA DISTRIBUTION</span>
+                            <span class="service-number">07</span>
+                        </div>
+                        <h3 class="service-title">📡 PUBLIC MEDIA DISTRIBUTION</h3>
+                        <div class="price-container">
+                            <span class="price-scanner"></span>
+                            <span class="price-text">Rp270.000</span>
+                        </div>
+                        <p class="service-desc">«Layanan publikasi dan distribusi konten ke media/platform publik berdasarkan materi dan izin dari pelanggan.»</p>
+                        
+                        <div class="flow-diagram">
+                            <span>CLIENT</span> &rarr; <span>AOKIRA</span> &rarr; <span>MEDIA</span> &rarr; <span>PUBLIC</span>
+                        </div>
+
+                        <ul class="feature-list">
+                            <li>Content distribution</li>
+                            <li>Public media submission</li>
+                            <li>Campaign coordination</li>
+                            <li>Publication assistance</li>
+                            <li>Distribution report</li>
+                        </ul>
+                        <button class="btn-card-request" onclick="openOrderModal('PUBLIC-MEDIA', 'Public Media Distribution')">REQUEST SERVICE</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Operations Panel & Network Viz -->
+        <section class="live-panel-section" id="about">
+            <div class="container grid-2col">
+                <!-- Dashboard Control -->
+                <div class="cyber-panel">
+                    <div class="panel-header">
+                        <span class="panel-icon">⚙</span>
+                        <h3>AOKIRA SERVICE CORE</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="panel-row"><span>SERVICES</span> <span class="val highlight">07</span></div>
+                        <div class="panel-row"><span>RESEARCH</span> <span class="val green">ACTIVE ●</span></div>
+                        <div class="panel-row"><span>SECURITY</span> <span class="val green">ACTIVE ●</span></div>
+                        <div class="panel-row"><span>DEBUGGING</span> <span class="val cyan">ONLINE ●</span></div>
+                        <div class="panel-row"><span>MEDIA</span> <span class="val cyan">READY ●</span></div>
+                        <div class="panel-row"><span>SYSTEM</span> <span class="val green-pulse">ONLINE ●</span></div>
+                    </div>
+                </div>
+
+                <!-- Network Visualization Canvas -->
+                <div class="cyber-panel network-panel">
+                    <div class="panel-header">
+                        <span class="panel-icon">📡</span>
+                        <h3>NETWORK NODES VISUALIZATION</h3>
+                    </div>
+                    <div class="panel-body canvas-body">
+                        <canvas id="network-canvas"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Aokira -->
+        <section class="why-section">
+            <div class="container">
+                <div class="section-header center">
+                    <h2 class="section-title">WHY AOKIRA</h2>
+                </div>
+                <div class="why-grid">
+                    <div class="why-card">
+                        <div class="why-icon">⚡</div>
+                        <h4>FAST</h4>
+                        <p>Proses layanan cepat, terstruktur, dan transparan.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">🔒</div>
+                        <h4>PRIVATE</h4>
+                        <p>Informasi pelanggan diperlakukan secara rahasia & aman.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">💼</div>
+                        <h4>PROFESSIONAL</h4>
+                        <p>Layanan disusun dengan workflow teknis yang jelas.</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">🛡️</div>
+                        <h4>AUTHORIZED</h4>
+                        <p>Layanan eksekusi hanya dilakukan atas izin sah pemilik.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legal Disclaimer Section -->
+        <section class="legal-notice-section">
+            <div class="container">
+                <div class="legal-box">
+                    <div class="legal-header">🔐 LEGAL / SECURITY NOTICE</div>
+                    <p><strong>AOKIRA CYBER</strong> — All security and monitoring services are performed only with proper authorization from the system or device owner.</p>
+                    <p>AOKIRA does not provide unauthorized access, credential theft, account takeover, or privacy invasion services.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Request Order -->
+    <div class="modal-overlay" id="order-modal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3>AOKIRA SERVICE REQUEST</h3>
+                <button class="modal-close" onclick="closeOrderModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="order-form" onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label>SELECT SERVICE</label>
+                        <select id="modal-service-select" required>
+                            <option value="IG-RESEARCH">Research IG (Rp25.000)</option>
+                            <option value="FAMILY-RESEARCH">Research Digital Family Target (Rp600.000)</option>
+                            <option value="CCTV-MONITOR">Authorized CCTV Security Monitoring (Rp5.000.000)</option>
+                            <option value="CAMERA-SCREEN">Authorized Camera & Screen Monitoring (Rp11.000.000)</option>
+                            <option value="DEVICE-REPAIR">HP Rusak / Device Repair (Rp300.000)</option>
+                            <option value="BUG-CRASH-FIX">Bug Crash Fix (Rp30.000)</option>
+                            <option value="PUBLIC-MEDIA">Public Media Distribution (Rp270.000)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>CLIENT NAME</label>
+                        <input type="text" id="client-name" placeholder="Nama Anda / Instansi" required>
+                    </div>
+                    <div class="form-group">
+                        <label>CONTACT (WHATSAPP / EMAIL)</label>
+                        <input type="text" id="client-contact" placeholder="08xxxxxxxxxx / user@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>REQUEST DETAILS</label>
+                        <textarea id="client-details" rows="4" placeholder="Jelaskan kebutuhan spesifik Anda..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full"><span class="btn-text">SEND REQUEST</span></button>
+                </form>
+
+                <div class="order-status-result" id="order-status-result">
+                    <div class="status-icon">✔</div>
+                    <h4>REQUEST RECEIVED</h4>
+                    <p>&gt; Your request has been registered.</p>
+                    <p>&gt; AOKIRA team will review the request.</p>
+                    <div class="status-badge-pending">STATUS: PENDING</div>
+                    <button class="btn btn-secondary btn-full" onclick="closeOrderModal()" style="margin-top:20px;">CLOSE TERMINAL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo-text">
+                    <span class="brand-name">AOKIRA CYBER</span>
+                    <span class="brand-sub">Digital Research & Authorized Security Services</span>
+                </div>
+                <p>© 2026 AOKIRA CYBER. ALL RIGHTS RESERVED.</p>
+                <div class="sys-status-footer">SYSTEM STATUS: <span class="t-green">ONLINE ●</span></div>
+            </div>
+            <div class="footer-links">
+                <div class="col">
+                    <h5>SERVICES</h5>
+                    <a href="#services">Research IG</a>
+                    <a href="#services">OSINT Family</a>
+                    <a href="#services">CCTV Monitoring</a>
+                    <a href="#services">Device Repair</a>
+                </div>
+                <div class="col">
+                    <h5>COMPANY</h5>
+                    <a href="#about">About System</a>
+                    <a href="#stats">Research Core</a>
+                    <a href="#contact">Contact Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+</body>
+</html>
+
